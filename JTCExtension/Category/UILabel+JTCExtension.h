@@ -14,5 +14,6 @@
 
 - (UILabel *(^)(NSString *))jtc_setText;
 - (UILabel *(^)(CGFloat))jtc_setFontSize;
+- (UILabel *(^)(UIColor *))jtc_setTextColor
 
 @end
