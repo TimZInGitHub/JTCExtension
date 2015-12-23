@@ -15,6 +15,9 @@
 		889C50DA1C2A8939006A263B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 889C50D81C2A8939006A263B /* LaunchScreen.storyboard */; };
 		889C50E51C2A8939006A263B /* JTCExtensionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 889C50E41C2A8939006A263B /* JTCExtensionTests.m */; };
 		889C50F01C2A8939006A263B /* JTCExtensionUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 889C50EF1C2A8939006A263B /* JTCExtensionUITests.m */; };
+		889C51031C2A899A006A263B /* UIView+JTCExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 889C51011C2A899A006A263B /* UIView+JTCExtension.m */; };
+		889C51061C2A8EA0006A263B /* UILabel+JTCExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 889C51051C2A8EA0006A263B /* UILabel+JTCExtension.m */; };
+		889C510D1C2A9746006A263B /* NSObject+JTCLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 889C510C1C2A9746006A263B /* NSObject+JTCLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		889C50EB1C2A8939006A263B /* JTCExtensionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JTCExtensionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		889C50EF1C2A8939006A263B /* JTCExtensionUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JTCExtensionUITests.m; sourceTree = "<group>"; };
 		889C50F11C2A8939006A263B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		889C51001C2A899A006A263B /* UIView+JTCExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JTCExtension.h"; sourceTree = "<group>"; };
+		889C51011C2A899A006A263B /* UIView+JTCExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JTCExtension.m"; sourceTree = "<group>"; };
+		889C51041C2A8EA0006A263B /* UILabel+JTCExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+JTCExtension.h"; sourceTree = "<group>"; };
+		889C51051C2A8EA0006A263B /* UILabel+JTCExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+JTCExtension.m"; sourceTree = "<group>"; };
+		889C510B1C2A9746006A263B /* NSObject+JTCLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+JTCLabel.h"; sourceTree = "<group>"; };
+		889C510C1C2A9746006A263B /* NSObject+JTCLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JTCLabel.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +110,8 @@
 		889C50C91C2A8939006A263B /* JTCExtension */ = {
 			isa = PBXGroup;
 			children = (
+				889C51071C2A8F32006A263B /* SubObj */,
+				889C50FD1C2A8981006A263B /* Category */,
 				889C50CD1C2A8939006A263B /* AppDelegate.h */,
 				889C50CE1C2A8939006A263B /* AppDelegate.m */,
 				889C50D01C2A8939006A263B /* ViewController.h */,
@@ -138,6 +149,26 @@
 				889C50F11C2A8939006A263B /* Info.plist */,
 			);
 			path = JTCExtensionUITests;
+			sourceTree = "<group>";
+		};
+		889C50FD1C2A8981006A263B /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				889C51001C2A899A006A263B /* UIView+JTCExtension.h */,
+				889C51011C2A899A006A263B /* UIView+JTCExtension.m */,
+				889C51041C2A8EA0006A263B /* UILabel+JTCExtension.h */,
+				889C51051C2A8EA0006A263B /* UILabel+JTCExtension.m */,
+				889C510B1C2A9746006A263B /* NSObject+JTCLabel.h */,
+				889C510C1C2A9746006A263B /* NSObject+JTCLabel.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		889C51071C2A8F32006A263B /* SubObj */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SubObj;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,7 +304,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				889C510D1C2A9746006A263B /* NSObject+JTCLabel.m in Sources */,
+				889C51031C2A899A006A263B /* UIView+JTCExtension.m in Sources */,
 				889C50D21C2A8939006A263B /* ViewController.m in Sources */,
+				889C51061C2A8EA0006A263B /* UILabel+JTCExtension.m in Sources */,
 				889C50CF1C2A8939006A263B /* AppDelegate.m in Sources */,
 				889C50CC1C2A8939006A263B /* main.m in Sources */,
 			);
